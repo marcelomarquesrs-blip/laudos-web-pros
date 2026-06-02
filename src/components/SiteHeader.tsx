@@ -18,11 +18,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-lg">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-3" onClick={() => setOpen(false)}>
-          <img src={logo} alt="Safetech Engenharia" className="h-[4.8rem] w-[4.8rem] object-contain" />
-          <div className="hidden flex-col leading-tight sm:flex">
-            <span className="text-base font-bold text-primary">SAFETECH</span>
-            <span className="text-[10px] font-medium tracking-[0.2em] text-steel">ENGENHARIA</span>
-          </div>
+          <img src={logo} alt="Safetech Engenharia" className="h-[9.6rem] w-[9.6rem] object-contain" />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
