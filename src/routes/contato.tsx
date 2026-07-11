@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Clock, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Clock, MessageCircle, Building2 } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -47,6 +47,7 @@ function ContactPage() {
           <div className="lg:col-span-2 space-y-4">
             <InfoCard icon={Phone} title="Telefone / WhatsApp" value={SITE.phone} href={WHATSAPP_URL} />
             <InfoCard icon={Mail} title="E-mail" value={SITE.email} href={`mailto:${SITE.email}`} />
+            <InfoCard icon={Building2} title="CNPJ" value={SITE.cnpj} />
             <InfoCard icon={MapPin} title="Localização" value={SITE.location} />
             <InfoCard icon={Clock} title="Horário de atendimento" value={SITE.hours} />
 
