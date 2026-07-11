@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import { Mail, MapPin, Phone, Clock, Building2 } from "lucide-react";
 import logo from "@/assets/logo-safetech.png";
 import { SITE, WHATSAPP_URL } from "@/lib/site";
 
@@ -43,7 +43,12 @@ export function SiteFooter() {
               <a href={`mailto:${SITE.email}`} className="hover:text-white break-all">{SITE.email}</a>
             </li>
             <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" />{SITE.location}</li>
-            <li className="flex items-start gap-2"><Clock className="mt-0.5 h-4 w-4 shrink-0" />{SITE.hours}</li>
+            <li className="flex items-start gap-2">
+              <Clock className="mt-0.5 h-4 w-4 shrink-0" />{SITE.hours}
+            </li>
+            <li className="flex items-start gap-2">
+              <Building2 className="mt-0.5 h-4 w-4 shrink-0" />CNPJ {SITE.cnpj}
+            </li>
           </ul>
         </div>
       </div>
